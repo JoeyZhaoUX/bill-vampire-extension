@@ -44,10 +44,10 @@
     `;
     root.innerHTML = `
       <div style="display:flex;gap:10px;align-items:flex-start;">
-        <div style="flex-shrink:0;width:32px;height:32px;border-radius:8px;background:rgba(244,63,94,.15);border:1px solid rgba(244,63,94,.4);display:flex;align-items:center;justify-content:center;font-size:14px;">\u{1F9DB}</div>
+        <div style="flex-shrink:0;width:32px;height:32px;border-radius:8px;background:rgba(244,63,94,.15);border:1px solid rgba(244,63,94,.4);display:flex;align-items:center;justify-content:center;font-size:14px;">🧛</div>
         <div style="flex:1;min-width:0;">
           <p style="margin:0 0 4px;font-size:13px;font-weight:600;color:#fff;">Another vampire detected</p>
-          <p style="margin:0 0 10px;font-size:12px;color:#94a3b8;line-height:1.5;">${escapeHtml(name)}${amount ? ' \u2014 $' + amount.toFixed(2) + '/mo' : ''}. Add to Bill Vampire?</p>
+          <p style="margin:0 0 10px;font-size:12px;color:#94a3b8;line-height:1.5;">${escapeHtml(name)}${amount ? ' — $' + amount.toFixed(2) + '/mo' : ''}. Add to Bill Vampire?</p>
           <div style="display:flex;gap:6px;">
             <button id="bv-add" style="flex:1;padding:6px 10px;background:linear-gradient(90deg,#f43f5e,#f59e0b);color:#fff;border:none;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;">Track it</button>
             <button id="bv-dismiss" style="padding:6px 10px;background:#1C1C2A;color:#94a3b8;border:1px solid rgba(100,116,139,.3);border-radius:8px;font-size:11px;font-weight:500;cursor:pointer;">Dismiss</button>
