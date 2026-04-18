@@ -1,0 +1,22 @@
+{
+  "name": "bill-vampire-extension",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Bill Vampire Patrol — Chrome extension that scans Gmail daily for new recurring charges.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.23",
+    "@types/chrome": "^0.0.254",
+    "@vitejs/plugin-react": "^5.1.1",
+    "vite": "^7.3.1"
+  }
+}

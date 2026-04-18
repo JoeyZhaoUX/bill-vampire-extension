@@ -1,0 +1,22 @@
+[
+  { "name": "Netflix", "from": ["info@account.netflix.com"], "subject_rx": "Your (monthly )?invoice|Payment receipt|Your Netflix (bill|receipt)", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://www.netflix.com/cancelplan" },
+  { "name": "Spotify", "from": ["no-reply@spotify.com"], "subject_rx": "Your receipt from Spotify|payment confirmation", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://www.spotify.com/account/subscription/" },
+  { "name": "Apple", "from": ["no_reply@email.apple.com", "do_not_reply@apple.com"], "subject_rx": "Your receipt from Apple|invoice from Apple", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://apps.apple.com/account/subscriptions" },
+  { "name": "iCloud+", "from": ["no_reply@email.apple.com"], "subject_rx": "iCloud.*(Storage|plan)", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://apps.apple.com/account/subscriptions" },
+  { "name": "Adobe Creative Cloud", "from": ["message@adobe.com", "mail@mail.adobe.com"], "subject_rx": "invoice|receipt|Creative Cloud", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://account.adobe.com/plans" },
+  { "name": "Substack", "from": ["no-reply@substack.com"], "subject_rx": "receipt|paid subscription|renewed", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://substack.com/account/settings" },
+  { "name": "OpenAI (ChatGPT)", "from": ["noreply@tm.openai.com", "payments+openai@stripe.com"], "subject_rx": "receipt|ChatGPT Plus", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://chat.openai.com/#settings/Subscription" },
+  { "name": "Anthropic (Claude)", "from": ["noreply@anthropic.com", "payments+anthropic@stripe.com"], "subject_rx": "receipt|Claude Pro", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://claude.ai/settings/billing" },
+  { "name": "GitHub", "from": ["noreply@github.com", "billing@github.com"], "subject_rx": "payment receipt|invoice", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://github.com/settings/billing" },
+  { "name": "Figma", "from": ["no-reply@figma.com"], "subject_rx": "invoice|receipt", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://www.figma.com/settings/account" },
+  { "name": "Notion", "from": ["team@makenotion.com", "no-reply@notion.so"], "subject_rx": "receipt|invoice|Notion", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://www.notion.so/my-integrations" },
+  { "name": "Linear", "from": ["hello@linear.app", "billing@linear.app"], "subject_rx": "receipt|invoice", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://linear.app/settings/billing" },
+  { "name": "Stripe (generic)", "from": ["@stripe.com"], "subject_rx": "receipt|invoice", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": null },
+  { "name": "1Password", "from": ["no-reply@1password.com"], "subject_rx": "receipt|payment", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://my.1password.com/billing" },
+  { "name": "Dropbox", "from": ["no-reply@dropbox.com"], "subject_rx": "receipt|invoice|Dropbox", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://www.dropbox.com/account/plan" },
+  { "name": "Zoom", "from": ["no-reply@zoom.us"], "subject_rx": "receipt|invoice|Zoom", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://zoom.us/billing" },
+  { "name": "Midjourney", "from": ["noreply@midjourney.com"], "subject_rx": "receipt|subscription", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://www.midjourney.com/account" },
+  { "name": "AWS", "from": ["no-reply-aws@amazon.com"], "subject_rx": "AWS.*Invoice", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://console.aws.amazon.com/billing/home" },
+  { "name": "Cloudflare", "from": ["billing@cloudflare.com"], "subject_rx": "invoice|receipt", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://dash.cloudflare.com/?to=/:account/billing" },
+  { "name": "Cohere", "from": ["@cohere.com"], "subject_rx": "receipt|invoice", "price_rx": "\\$([0-9]+\\.[0-9]{2})", "cycle": "monthly", "cancel_url": "https://dashboard.cohere.com/billing" }
+]

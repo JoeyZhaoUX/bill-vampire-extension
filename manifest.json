@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Bill Vampire Patrol",
+  "short_name": "Bill Vampire",
+  "version": "0.1.0",
+  "description": "Scans Gmail for new recurring charges. Shows a rose toast the moment a vampire sends its first receipt.",
+  "icons": {
+    "16": "public/icons/icon-16.png",
+    "48": "public/icons/icon-48.png",
+    "128": "public/icons/icon-128.png"
+  },
+  "action": {
+    "default_popup": "src/popup/index.html",
+    "default_title": "Bill Vampire Patrol",
+    "default_icon": "public/icons/icon-48.png"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["src/content/gmail-toast.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "identity",
+    "storage",
+    "alarms",
+    "cookies",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://gmail.googleapis.com/*",
+    "https://mail.google.com/*",
+    "https://billvampire.com/*",
+    "https://*.billvampire.com/*"
+  ],
+  "oauth2": {
+    "client_id": "REPLACE_WITH_GOOGLE_OAUTH_CLIENT_ID.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/gmail.readonly"]
+  },
+  "externally_connectable": {
+    "matches": ["https://billvampire.com/*", "https://*.billvampire.com/*"]
+  }
+}
